@@ -1,0 +1,699 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+	font-family:'Roboto Light';
+	src:url("../fonts/Roboto_Light/Roboto-Light.eot?") format("eot"),
+		url("../fonts/Roboto_Light/Roboto-Light.woff") format("woff"),
+		url("../fonts/Roboto_Light/Roboto-Light.ttf") format("truetype"),
+		url("../fonts/Roboto_Light/Roboto-Light.svg#Roboto-Light") format("svg");
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face {
+	font-family:'Roboto Regular';
+	src:url("../fonts/Roboto_Regular/Roboto-Regular.eot?") format("eot"),
+		url("../fonts/Roboto_Regular/Roboto-Regular.woff") format("woff"),
+		url("../fonts/Roboto_Regular/Roboto-Regular.ttf") format("truetype"),
+		url("../fonts/Roboto_Regular/Roboto-Regular.svg#Roboto-Regular") format("svg");
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face {
+	font-family:'Roboto Medium';
+	src:url("../fonts/Roboto_Medium/Roboto-Medium.eot?") format("eot"),
+		url("../fonts/Roboto_Medium/Roboto-Medium.woff") format("woff"),
+		url("../fonts/Roboto_Medium/Roboto-Medium.ttf") format("truetype"),
+		url("../fonts/Roboto_Medium/Roboto-Medium.svg#Roboto-Medium") format("svg");
+	font-weight:normal;
+	font-style:normal;
+}
+
+
+
+body { background: #f3f3f3;font-family:'Roboto Regular', Arial, Helvetica, sans-serif; color: #111; font-size: 14px}
+.topAdInr {
+    max-width: 970px;
+    margin: 10px auto;
+}
+header {
+    background: #fff;
+    padding: 5px 0 10px;
+    border-bottom: 1px solid #ccc;
+}
+.leftDwnldHdr {
+    float: left;
+}
+.rghtHdrIcns {
+    float: right;
+}
+.rghtHdrIcns ul li { display: inline-block; margin: 0 15px}
+.hdrLogo {
+    float: left;
+    width: 170px;
+    position: relative;
+    padding-left: 30px;
+}
+.hrdBtmRght {
+    margin-left: 170px;
+}
+.hdrMenu {
+    height: 18px;
+    width: 23px;
+    position: absolute;
+    left: 0;
+	top: 3px;
+	cursor: pointer;
+    background: url(../images/menuIcn.png) no-repeat center center;
+}
+.hdrCity {
+    float: left;
+    width: 100px;
+	margin-right: 10px;
+}
+.hdrAllCat {
+    float: left;
+    width: 350px;
+}
+.hrdBtmLgnPst {
+    float: right;
+}
+.hrdBtmLgnPst>div {
+    display: inline-block;
+    vertical-align: middle;
+	margin: 0 0 0 10px
+}
+.topStrip a, .hrdBtmRght a { color: #111;}
+.topStrip a .fa, .hrdBtmRght a .fa { color: #666; margin-right: 3px;} 
+.topStrip a:hover .fa, .hrdBtmRght a:hover .fa,
+.topStrip a:hover, .hrdBtmRght a:hover { color: #008bcf}
+.rghtHdrIcns ul li {
+    display: inline-block;
+    margin: 0 15px;
+	vertical-align: middle;
+}
+.rghtHdrIcns ul {
+    margin-right: -17px;
+    padding: 0;
+}
+.allCatSlct {
+    float: left;
+	width: 110px;
+	position:relative
+}
+.allCatSlct:after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    border-left: 1px solid #bbb;
+    height: 23px;
+    display: block;
+    right: -5px;
+    z-index: 5;
+}
+.allCatInpt {
+    margin-left: 110px;
+    position: relative;
+    padding-right: 30px;
+}
+.dropdown-menu>li>a { padding: 5px 10px; font-size: 13px; border-top: 1px solid #eee}
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li.selected>a { background: #008bcf; color: #fff}
+.leftMenu {
+    float: left;
+    width: 280px;
+    background: #fff;
+}
+.leftMenu ul li a .fa { color: #999; margin-right: 10px; font-size: 18px;vertical-align: middle }
+.leftMenu ul li a .fa.fa-mobile { font-size: 24px; }
+.leftMenu ul li a {
+    display: block;
+    padding: 10px 50px 10px 20px;
+    border-top: 1px solid #eee;
+    color: #111;
+    position: relative;
+	border-left: 3px solid transparent;
+}
+.rghtHdrIcns ul li.nxtIcn a {
+    width: 57px;
+    height: 24px;
+    display: block;
+    background: url(../images/nxtIcn.jpg) center center no-repeat;
+}
+.hdrCity .bootstrap-select.btn-group .dropdown-menu { min-width: 200px}
+header .dropdown-menu>li:first-child>a { border: 0}
+.leftMenu ul li:hover a,
+.leftMenu ul li a:hover { border-left-color: #008bcf; color: #008bcf; text-decoration: none}
+.leftMenu ul li:hover a .fa,
+.leftMenu ul li a:hover .fa { color: #008bcf}
+.leftMenu ul li {
+    display: block;
+}
+.leftMenu ul {
+    padding: 0;
+	margin: 0
+}
+a, a:hover, a:focus, .btn, input, select { text-decoration: none !important; outline: none}
+a, a:hover, a:focus, 
+.btn, input, select,
+.cmnPrdctDtls,
+.scrollTop > span {
+	-webkit-transition: all 300ms;
+	-moz-transition: all 300ms;
+	-ms-transition: all 300ms;
+	-o-transition: all 300ms;
+		transition: all 300ms;	
+}
+/*.leftMenu { 
+	height: 80vh; 
+	height: -webkit-calc(100vh - 55px); 
+	height: -moz-calc(100vh - 55px); 
+	height: -ms-calc(100vh - 55px); 
+	height: -o-calc(100vh - 55px); 
+	height: calc(100vh - 55px);
+}*/
+.leftMenuInr { height: 100%; }
+
+.leftMenu ul li a .badge {
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    font-size: 12px;
+    width: 30px;
+    padding: 3px;
+    height: 15px;
+    font-weight: normal;
+    background: #00bb00;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+		border-radius: 1px;
+}
+.hdrPstAd a {
+    display: block;
+    padding: 9px 17px;
+    background: #fcec52;
+    border: 1px solid #e1b80f;
+	font-size: 13.33px;
+	font-family:'Roboto Medium';
+	height: 39px;
+	width: 115px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+		border-radius: 2px;
+}
+.hdrPstAd a:hover,
+.pstFreeAds a:hover { color: #222; background: #f3e241; border: 1px solid #d6ae0a;}
+.hrdBtmLgnPst .fa {
+    font-size: 20px;
+    vertical-align: text-bottom;
+}
+.rghtCntnr { margin-left: 295px;}
+.mainBnr .owl-nav > div {
+    width: 22px;
+    height: 22px;
+    display: block;
+    background: #fff url(../images/hndlrImg.png) no-repeat;
+    font-size: 0;
+	position:absolute;
+	top: 50%; 
+	margin-top: -31px;
+}
+.mainBnr .owl-nav > div.owl-prev {
+    left: 20px;
+    background-position: left center;
+    -webkit-box-shadow: 1px 0 2px rgba(0,0,0,.3);
+	-moz-box-shadow: 1px 0 2px rgba(0,0,0,.3);
+		box-shadow: 1px 0 2px rgba(0,0,0,.3);
+}
+.mainBnr .owl-nav > div.owl-next {
+    right: 20px;
+    background-position: right center;
+    -webkit-box-shadow: 1px 0 2px rgba(0,0,0,.3);
+	-moz-box-shadow: 1px 0 2px rgba(0,0,0,.3);
+		box-shadow: 1px 0 2px rgba(0,0,0,.3);
+}
+.owl-carousel .owl-item { float: left;}
+.owl-carousel.owl-drag .owl-item { overflow: hidden}
+.mainBnr .owl-dots .owl-dot {
+    display: inline-block;
+    margin: 0 3px;
+}
+.mainBnr .owl-dots .owl-dot span {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+	border: 1px solid #a1a1a1;
+    
+}
+.mainBnr .owl-dots { text-align:center;margin: 15px 0;}
+.mainBnr .owl-dots .owl-dot.active span { background: #008bcf; border-color: #008bcf}
+.mainBnr .owl-nav > div,
+.mainBnr .owl-dots .owl-dot span,
+.downlSms:after,
+.scrollTop > span,
+.plusIcn > span {
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	-ms-border-radius: 100%;
+		border-radius: 100%;
+}
+.rghtCntnr {
+    margin-left: 295px;
+    padding: 17px 0 25px;
+}
+.mainBnr .owl-carousel .owl-stage-outer,
+.trndngSldr,
+.commanSlider,
+.creatAlrt,
+.dwnldAppCntnr {
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+		border-radius: 2px;
+    -webkit-box-shadow: 0 0 6px rgba(0,0,0,.1);
+	-moz-box-shadow: 0 0 6px rgba(0,0,0,.1);
+	-ms-box-shadow: 0 0 6px rgba(0,0,0,.1);
+		box-shadow: 0 0 6px rgba(0,0,0,.1);
+}
+.trndngAds {position:relative; }
+
+.trndngSldr {
+    margin-right: 315px;
+	background: #fff; padding: 15px 23px 26px;
+}
+.prdctHead h4 { margin: 2px 0 11px; font-size: 17px; }
+.commanSlider .prdctHead h4 {float:left; max-width: 60%}
+.commanSlider .prdctHead a { float: right; color:#008bcf}
+.commanSlider .prdctHead a:hover { color:#094c6d}
+.trndngAds .prdctDtl > a {
+    display: block;
+    font-size: 13.33px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #222;
+}
+.timePlac {
+    font-size: 12px;
+    color: #989898;
+}
+.place { float: left;}
+.time { float: right;}
+
+
+.trndngAdCntnr { position: absolute; right: 0; top:0}
+.trndngAds .topImgPrdct > a {
+    display: block;
+    height: 135px;
+    position: relative;
+    overflow: hidden;
+    background: #e4e4e4;
+}
+.trndngAds .topImgPrdct > a > img {
+	position: absolute; 
+	top: 50%; 
+	left: 0; 
+	width: 100%; 
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+		transform: translateY(-50%);	
+} 
+
+.trndngAds .prdctCntnr {
+    border: 1px solid #ccc;
+    overflow: hidden;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+		border-radius: 4px;
+}
+.prdctDtl { padding: 5px;}
+.trndngSldr .owl-nav > div,
+.commanSlider .owl-nav > div {
+    height: 80px;
+    display: block;
+    background: #fff url(../images/hndlrImgBig.png) no-repeat;
+    font-size: 0;
+	position:absolute;
+	top: 50%; 
+}
+.trndngSldr .owl-nav > div {margin-top: -40px;width: 20px;}
+.commanSlider .owl-nav > div {margin-top: -40px;width: 30px;}
+.commanSlider .owl-nav > div.owl-prev { left: -14px}
+.commanSlider .owl-nav > div.owl-next {right: -14px;}
+.trndngSldr .owl-nav > div.owl-prev,
+.commanSlider .owl-nav > div.owl-prev { background-position: left center;}
+.trndngSldr .owl-nav > div.owl-prev{left: -22px;}
+
+.trndngSldr .owl-nav > div.owl-next,
+.commanSlider .owl-nav > div.owl-next { background-position: right center;}
+.trndngSldr .owl-nav > div.owl-next {right: -22px;}
+.commanSlider { background: #fff; margin: 15px 0; padding: 15px 20px 25px}
+.cmnPrdctDtls {
+    padding: 13px;
+    text-align: center;
+    background: url(../images/grdntBg.png) center top repeat-x;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+	margin-bottom: -90px;
+}
+.commanSlider .prdctCntnr:hover .cmnPrdctDtls { margin-bottom: 0}
+.cmnPrdctDtls p { height: 40px; overflow: hidden}
+.cmnPrdctDtls > h4,
+.prdctHead h4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.commanSlider .prdctHead {overflow: hidden;}
+.cmnPrdctDtls > h4 > a { color: #fff}
+.cmnPrdctDtls > a {
+    display: inline-block;
+    background: #fff;
+    padding: 5px;
+    height: 27px;
+    width: 72px;
+    font-size: 12px;
+    color: #008bcf;
+    border: 1px solid #008bcf;
+    -webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+		border-radius: 3px;
+}
+.cmnPrdctDtls > a:hover { background: #008bcf; color: #fff}
+.commanSlider .prdctCntnr {
+    margin: 0 14px;
+    position: relative;
+	overflow:hidden;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+		border-radius: 3px;
+}
+.commanSlider .owl-carousel {
+    padding: 0 4px;
+}
+.creatAlrt { background: #fff; padding: 15px 20px}
+.snglInput {
+    float: left;
+    width: 25%;
+    padding: 0 9px;
+    height: 36px;
+    margin: 13px 0;
+}
+.crtAlrtFrmInr {margin: 0 -9px;}
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) { width: 100%}
+.bootstrap-select>.dropdown-toggle { -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0; border: 0}
+.bootstrap-select>.dropdown-toggle { padding-right: 15px; }
+.bootstrap-select.btn-group .dropdown-toggle .caret {
+    width: 12px;
+    height: 10px;
+    border: 0;
+	right: 2px;
+	margin-top: -5px;
+    background: #fff url(../images/dropIcn.png) center center no-repeat;
+}
+.bootstrap-select.btn-group .dropdown-menu { padding: 0; max-height: 235px !important}
+.bootstrap-select .btn-default:hover,
+.bootstrap-select .btn:focus,
+.bootstrap-select.open .dropdown-toggle,
+.bootstrap-select.open>.dropdown-toggle.btn-default.focus, 
+.bootstrap-select.open>.dropdown-toggle.btn-default:focus, 
+.bootstrap-select.open>.dropdown-toggle.btn-default:hover {
+    background: #fff;
+	outline: none !important;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+		box-shadow: none;
+}
+
+.hdrAllCat {
+    float: left;
+    width: 350px;
+    border: 1px solid #008bcf;
+    position: relative;
+}
+.allCatInpt>input[type="text"] {
+    width: 100%;
+    padding: 5px 12px;
+    border: 0;
+    height: 32px;
+    font-size: 13px;
+}
+.allCatInpt input[type="submit"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 0;
+    width: 40px;
+    border: 0;
+    background: #008bcf url(../images/srchIcn.png) center center no-repeat;
+}
+.allCatInpt input[type="submit"]:hover { background-color: #0077b1;}
+.bootstrap-select.btn-group .dropdown-toggle .filter-option { font-size: 13px;}
+
+
+
+.crtAlrtFrm .bootstrap-select>.dropdown-toggle { border-bottom: 1px solid #d6d6d6}
+.snglInput input[type="text"] {
+    border: 0;
+    border-bottom: 1px solid #d6d6d6;
+    font-size: 13px;
+    padding: 8px 12px;
+}
+.snglInput input { width: 100%;}
+.snglInput input[type="submit"],
+.btntSms input[type="submit"] {
+    border: 0;
+    color: #fff;
+    background: #008bcf;
+    height: 36px;
+    font-size: 13px;
+    text-transform: uppercase;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+		border-radius: 4px;
+}
+.leftLogos {
+    float: left;
+    width: 60%;
+    padding: 22px 13px;
+}
+.singleLogo {
+    float: left;
+    width: 33.333%;
+    padding: 0 5px;
+}
+.singleLogo > a {
+    display: block;
+    background: #f3f3f3;
+    border: 1px solid #c9c9c9;
+    color: #222;
+    overflow: hidden;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+		border-radius: 5px;
+}
+
+.singleLogo > a:hover { background: #fff; border-color:#0b66b5}
+.snglInput input[type="submit"]:hover, 
+.btntSms input[type="submit"]:hover {
+    color: #fff;
+    background-color: #286090;
+    border-color: #204d74;
+}
+
+.singleLogo > a > .logoApp {
+    float: left;
+    width: 45px;
+    height: 45px;
+    background: #f3f3f3 center center no-repeat;
+    border-right: 1px solid #c9c9c9;
+}
+.singleLogo.appleApp > a > .logoApp { background-image: url(../images/appApple.jpg)}
+.singleLogo.googleApp > a > .logoApp { background-image: url(../images/appGoogle.jpg)}
+.singleLogo.wndwsApp > a > .logoApp { background-image: url(../images/appWndw.jpg)}
+
+.singleLogo > a:hover > .logoApp {background: #0b66b5 center center no-repeat; border-color:#0b66b5}
+.singleLogo.appleApp > a:hover > .logoApp { background-image: url(../images/appApple-h.jpg)}
+.singleLogo.googleApp > a:hover > .logoApp { background-image: url(../images/appGoogle-h.jpg)}
+.singleLogo.wndwsApp > a:hover > .logoApp { background-image: url(../images/appWndw-h.jpg)}
+
+.singleLogo > a > .logoApp + span {
+    display: block;
+    margin-left: 50px;
+    text-align: center;
+    padding: 13px 5px;
+	font-size: 13px
+}
+.dwnldApp {margin: 30px 0 0;}
+.dwnldAppCntnr { background: #fff; overflow: hidden }
+.downlSms {
+    margin-left: 70%;
+    position: relative;
+    background: #f3f3f3;
+    padding: 10px;
+    padding-left: 5px;
+	z-index:1
+}
+.downlSms:before {
+    content: "";
+    position: absolute;
+    left: -40px;
+    top: 0;
+    bottom: 0;
+    right: -50px;
+    background: #f3f3f3;
+    z-index: -1;
+    -webkit-transform: skewX(-39deg);
+	-moz-transform: skewX(-39deg);
+	-ms-transform: skewX(-39deg);
+	-o-transform: skewX(-39deg);
+		transform: skewX(-39deg);
+}
+.downlSms:after {
+    content: "Or";
+    position: absolute;
+    left: -55px;
+    top: 50%;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    background: #f3f3f3;
+    text-align: center;
+    margin-top: -8px;
+}
+.dwnldSmsInpt { position: relative;}
+.iptSms { margin-right: 85px; padding-top: 8px;}
+.btntSms { position: absolute;top: 0; right: 0;}
+.iptSms input[type="text"] {
+    border: 0;
+    border-bottom: 1px solid #d6d6d6;
+    font-size: 13px;
+    padding: 5px 0;
+    width: 100%;
+    background: transparent;
+}
+.btntSms input[type="submit"] { width: 80px; line-height: 36px;}
+footer { background: #fff;}
+.ftrLeft {
+    float: left;
+    width: 65%;
+	padding-right: 15px;
+}
+.ftrNav { padding: 17px 0;}
+.ftrNav ul { padding: 0; margin: 0 -7px;}
+.ftrNav ul li {
+    display: inline-block;
+    margin: 0 7px;
+}
+.ftrNav ul li { display: inline-block}
+.ftrNav ul li a { color: #333; font-size: 13px}
+.ftrDis p {
+    font-size: 12px;
+    color: #a0a0a0;
+    margin-bottom: 15px;
+    line-height: 18px;
+    letter-spacing: .1px;
+}
+.pstFreeAds {
+    padding: 13px;
+    background: #f8f8f8;
+    font-size: 13px;
+}
+.pstFreeAds a {
+    display: inline-block;
+    padding: 9px 10px;
+    background: #fcec52;
+    border: 1px solid #e1b80f;
+    font-size: 15px;
+    font-family: 'Roboto Medium';
+    height: 39px;
+    width: 115px;
+    color: #222;
+    text-align: center;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+		border-radius: 4px;
+}
+.pstFreeAds p { margin: 9px 0; display: inline-block; margin-right: 15px;}
+.ftrCity ul li a,
+.allCityTxt a { font-size: 12px; color: #333; letter-spacing: .4px;}
+.ftrNav ul li a:hover,
+.ftrCity ul li a:hover,
+.allCityTxt a:hover,
+.ftrSclIcns > ul > li > a:hover { color: #0b66b5}
+.ftrCity ul li { display: block;padding: 1px 0;}
+.ftrCity ul {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 120px;
+	vertical-align: top
+}
+.ftrRight {
+    padding-left: 15px;
+    margin-left: 65%;
+    border-left: 1px solid #eee;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.ftrSclIcns > span {
+    float: left;
+    font-size: 14px;
+    font-family: 'Roboto Medium';
+    margin: 5px 15px 5px 0;
+}
+.ftrSclIcns { overflow:hidden; margin: 18px 0;}
+.ftrSclIcns > ul > li { display: inline-block; margin: 0 5px;}
+.ftrSclIcns > ul { padding: 0; margin: 0;}
+.ftrSclIcns > ul > li > a {color: #333; font-size: 20px;}
+.ftrBtm { background: #e0e0e0; padding: 13px 0; font-size: 13px;}
+.ftrSclIcns > ul > li > a:hover { opacity: .7}
+
+.scrollTop {
+    position: fixed;
+    right: 80px;
+    bottom: 85px;
+    z-index: 99;
+}
+.scrollTop > span { 
+	width: 38px;
+    height: 38px;
+	display: inline-block;
+	background: #fff;
+	padding-top: 10px;
+	text-align: center;
+	line-height: 18px;
+	color:#555;
+	cursor: pointer;
+    border: 1px solid #d1d1d1;
+
+}
+.plusIcn { display: inline-block; vertical-align:middle; margin-left: 15px}
+.plusIcn > span {
+    font-size: 20px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+}
+.plusIcn > span {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: #008bcf;
+    text-align: center;
+    line-height: 50px;
+    font-size: 27px;
+    color: #fff;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+}
+.scrollTop > span:hover { background: #008bcf; color: #fff}
