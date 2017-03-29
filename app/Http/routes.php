@@ -10,7 +10,17 @@
 | and give it the controller to call when that URI is requested.
 |
 */
+
+  Route::match(['post','get'],'cat','HomeController@index');
+
+  Route::match(['post','get'],'category','HomeController@category');
+
+
+
+
 Route::group(['middleware' => ['web']], function(){
+
+
 
   Route::get('/',[
           'as' => '/',

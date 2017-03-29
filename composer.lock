@@ -4,9 +4,66 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "fc8a68edeb70aa2b4f302779c9649e7c",
-    "content-hash": "0cc854348b52ef12a9778131faa29f5d",
+    "hash": "d9b0d523816f32c97bd06c896cd8e71f",
+    "content-hash": "7629bfa898ba7e7c951076774494010f",
     "packages": [
+        {
+            "name": "atayahmet/laravel-nestable",
+            "version": "v0.7.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/atayahmet/laravel-nestable.git",
+                "reference": "89fa4ac4a3a55d11f315cabe04cfe60aae8225a5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/atayahmet/laravel-nestable/zipball/89fa4ac4a3a55d11f315cabe04cfe60aae8225a5",
+                "reference": "89fa4ac4a3a55d11f315cabe04cfe60aae8225a5",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "5.2.*|5.3.*|5.4.*",
+                "illuminate/support": "5.2.*|5.3.*|5.4.*",
+                "php": ">=5.5.5"
+            },
+            "require-dev": {
+                "orchestra/database": "~3.1",
+                "orchestra/testbench": "~3.0",
+                "phpunit/phpunit": "^4.0|^5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Nestable\\": "src/",
+                    "Nestable\\Tests\\": "tests/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ahmet ATAY",
+                    "email": "ahmet.atay@hotmail.com",
+                    "homepage": "http://www.atayahmet.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Laravel 5 nested categories library",
+            "homepage": "https://github.com/atayahmet/nestable",
+            "keywords": [
+                "category",
+                "laravel",
+                "nestable",
+                "nested",
+                "nestedset"
+            ],
+            "time": "2017-02-07 13:30:21"
+        },
         {
             "name": "barryvdh/laravel-dompdf",
             "version": "v0.6.1",
@@ -758,16 +815,16 @@
         },
         {
             "name": "maatwebsite/excel",
-            "version": "2.1.10",
+            "version": "2.1.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Maatwebsite/Laravel-Excel.git",
-                "reference": "a544a9b45b971499fb3b0fb7499ba0ac3b430233"
+                "reference": "655def96b5e98d1fe0974d9c4e2ec5f2b591a322"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Maatwebsite/Laravel-Excel/zipball/a544a9b45b971499fb3b0fb7499ba0ac3b430233",
-                "reference": "a544a9b45b971499fb3b0fb7499ba0ac3b430233",
+                "url": "https://api.github.com/repos/Maatwebsite/Laravel-Excel/zipball/655def96b5e98d1fe0974d9c4e2ec5f2b591a322",
+                "reference": "655def96b5e98d1fe0974d9c4e2ec5f2b591a322",
                 "shasum": ""
             },
             "require": {
@@ -775,6 +832,7 @@
                 "illuminate/config": "5.0.*|5.1.*|5.2.*|5.3.*|5.4.*",
                 "illuminate/filesystem": "5.0.*|5.1.*|5.2.*|5.3.*|5.4.*",
                 "illuminate/support": "5.0.*|5.1.*|5.2.*|5.3.*|5.4.*",
+                "jeremeamia/superclosure": "^2.3",
                 "nesbot/carbon": "~1.0",
                 "php": ">=5.5",
                 "phpoffice/phpexcel": "1.8.*",
@@ -821,7 +879,7 @@
                 "import",
                 "laravel"
             ],
-            "time": "2017-01-20 16:16:51"
+            "time": "2017-03-28 10:47:04"
         },
         {
             "name": "monolog/monolog",

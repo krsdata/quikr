@@ -12,17 +12,26 @@ class CreateCategoriesTable extends Migration {
 	 */
 	public function up()
 	{
+		Schema::create('category', function(Blueprint $table)
+		{
+			$table->increments('id');
+			$table->string('name')->nullable();
+			$table->string('slug')->nullable();
+			$table->integer('parent_id')->nullable()->unsigned();;
+			$table->timestamps();
+		});
+
 		Schema::create('categories', function(Blueprint $table)
 		{
 			$table->increments('id');
 			$table->string('category_name')->nullable();
 			$table->string('sub_category_name')->nullable();
-			$table->integer('parent_id')->nullable();
-			$table->boolean('status')->nullable();
+			$table->string('slug')->nullable();
+			$table->string('status')->default(0);
+			$table->integer('parent_id')->nullable()->unsigned();;
 			$table->timestamps();
 		});
 	}
-
 
 	/**
 	 * Reverse the migrations.
